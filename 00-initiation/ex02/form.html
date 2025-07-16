@@ -1,0 +1,60 @@
+<!-- Create a HTML form that represents the usual informations of any contact. This form
+will show the following fields:
+• Firstname: a text field.
+• Name: a text field, also.
+• Age: you must use the specific numeric field specific to the HTML5.
+• Phone: you must use the tel field specific to the HTML5.
+• Email : you must use the email field specific to the HTML5.
+• Student at 42?: you must use the checkbox field.
+• Gender: you must use radio buttons with the values Male, Female and Other.
+• A form submission button. The onclick attribute of your button must be: ’displayFormContent -->
+<html>
+    <header>
+        <title>form</title>
+        <script src="popup.js"></script>
+    </header>
+    <body>
+        <form action="" method="POST" id="form">
+            <fieldset>
+                <label for="firstname">Firstname</label>
+                <input type="text" id="firstname" name="firstname"/>
+            </fieldset>
+            <fieldset>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name"/>
+            </fieldset>
+            <fieldset>
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age"/>
+            </fieldset>
+            <fieldset>
+                <label for="phone">Telephone</label>
+                <input type="tel" id="phone" name="phone"/>
+            </fieldset>
+            <fieldset>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email"/>
+            </fieldset>
+            <fieldset>
+                <label for="student">Student at 42?</label>
+                <input type="checkbox" id="student" name="student"/>
+            </fieldset>
+            <fieldset>
+                <label>Gender</label>
+                <div>
+                    <input type="radio" id="gender_male" name="gender" value="male" />
+                    <label for="gender_male">male</label>
+                </div>
+                <div>
+                    <input type="radio" id="gender_female" name="gender" value="female" />
+                    <label for="gender_female">female</label>
+                </div>
+                <div>
+                    <input type="radio" id="gender_other" name="gender" value="other" />
+                    <label for="gender_other">other</label>
+                </div>
+            </fieldset>
+            <button type="submit" onclick="displayFormContents()"><h1>submit</h1></button>
+        </form>
+    </body>
+</html>
